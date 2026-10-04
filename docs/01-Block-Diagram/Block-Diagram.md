@@ -20,4 +20,4 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 
 ## Block Diagram 
 
-![Team103_UI_Board_Duotao.drawio](Team103_UI_Board_Duotao.drawio.png)
+![Team103_UI_Board_Duotao.drawio](block-diagram.png)
