@@ -20,4 +20,5 @@ This block diagram shows the user interface board designed by Duotao Gao for the
 I used ChatGPT to help interpret the assignment requirements, organize diagram labels, and draft the overview. I also used an AI-generated guide provided by a teammate as a reference. I edited the diagram and webpage myself.
 
 Query text:
-1. Could you please tell me what this assignment is about.
+1. Tell me what this assignment is about.
+2. Give me more complete overview and instruction.
