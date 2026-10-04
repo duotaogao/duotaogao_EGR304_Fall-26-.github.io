@@ -1,21 +1,14 @@
 ---
 title: Individal Block Diagram
 tags:
-- tag1
-- tag2
+- EGR 304
+- UI Board
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+This block diagram shows the user interface board designed by Duotao Gao for the GripRx project of Team 103. The Microchip PIC18F57Q43 Curiosity Nano reads the start/stop, up and down buttons, controls the character LCD, and generates sound feedback through the DAC, active low-pass filter, audio amplifier and speaker. The user interface board is connected to the force gauge board via the J1 connector using UART, UI_RUN signals and the common ground. The proposed power supply scheme is a 9V wall-plug power supply and a 5V linear voltage regulator. Component selection and electrical parameters will be verified during the detailed design stage.
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+
 
 
 ## Block Diagram 
