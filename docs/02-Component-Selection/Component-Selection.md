@@ -50,9 +50,9 @@ title: Component Selection Example
     | Suitable for narrower Spaces                                 | Different installation shapes|
     |  |
    
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Choice:** Option 2: CMS-3652-28L200 speaker
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Rationale:** I chose the CMS-3652-28L200 because it is low in price, compact in size and comes with leads, making it a suitable candidate as a speaker for the UI board. Its 8Ω impedance and 2W rated input power comply with the planned specifications to be adopted. Subsequently, we will verify whether the prompt sound is clear and audible in conjunction with the actual power amplifier and the casing.
 
 ### Style 2
 
