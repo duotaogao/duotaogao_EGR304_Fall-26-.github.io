@@ -1050,14 +1050,14 @@
 </ol>
 <p><strong>Choice:</strong> Option 1: MCP6004-I/P</p>
 <p><strong>Rationale:</strong> I choose MCP6004-I/P as the operational amplifier for the active low-pass filter. It supports 5V power supply for the system. The DIP packaging makes it convenient to build and debug on the breadboard, while remaining consistent with the existing block diagram.</p>
-<p><strong>External Clock Module</strong></p>
+<p><strong>audio power amplifier</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
+<p>LM386N-1/NOPB audio power amplifier</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image10.png" data-desc-position="bottom"><img alt="" src="image10.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$1.18/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM386N-1-NOPB/6284?s=N4IgTCBcDaIDIFkDMAOAbAOQLQEYD0GA8gAoBCIAugL5A">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1068,26 +1068,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Supports 5V power supply</td>
+<td>The output power is limited under low-voltage power supply, and the volume of the prompt tone needs to be verified.</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>DIP packaging facilitates the construction of breadboards.</td>
+<td>Conventional single-ended circuits require output coupling capacitors, which occupy additional space.</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
+<p>LM4861M/NOPB audio power amplifier</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image11.png" data-desc-position="bottom"><img alt="" src="image11.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$1.81/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM4861M-NOPB/334832?s=N4IgTCBcDaIDIFkAsAOAbARgQegHIHkAFAIRAF0BfIA">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1098,26 +1098,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Under the conditions of 5V, 8Ω and 1% THD+N, the typical output power is 1.1W.</td>
+<td>When SOIC packaging is used for breadboards, an adapter board is required.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>Bridging output does not require an output coupling capacitor.</td>
+<td>In bridge mode, both ends of the speaker must be connected to the amplifier output and cannot be grounded.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
+<p>LM4871M/NOPB audio power amplifier</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image12.png" data-desc-position="bottom"><img alt="" src="image12.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$1.92/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM4871M-NOPB/364185?s=N4IgTCBcDaIDIFkAsAOA7ARgQegHIHkAFAIRAF0BfIA">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1128,23 +1128,23 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Supports 5V power supply and 8Ω speakers.</td>
+<td>SOIC packaging requires an adapter board to be inserted into the breadboard.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>It provides an off mode to reduce power consumption when no sound is being played.</td>
+<td>When the output power is high, it is necessary to check the heat dissipation of the chip and the power supply capacity of the power supply.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 1: CTX936TR-ND surface mount oscillator</p>
+<p><strong>Rationale:</strong> I chose the LM386N-1/NOPB as the power amplifier for the prompt sound circuit because it supports 5V power supply for the system and its DIP package makes it convenient for breadboard assembly and debugging. Its built-in voltage gain reduces the external gain setting components, making it suitable for the simple mono prompt sound function of this project.</p>
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>
