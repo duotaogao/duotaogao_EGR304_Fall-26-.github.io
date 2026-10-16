@@ -1033,11 +1033,11 @@
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
+<p>NHD-0216K1Z-FL-YBW LED panel </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$7.83/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-FL-YBW/1701171?s=N4IgTCBcDaIHIAkAiBaADGAjANgNKYC0UAxAGRQE0AhAdRAF0BfIA">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1048,26 +1048,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>The 5V power supply complies with the power rail planned to be adopted by the UI board.</td>
+<td>The typical current of the backlight at 5V is 130mA, which needs to be included in the power supply budget.</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Semi-transparent reflective screens can display by using ambient light.</td>
+<td>When using a 4-bit write-only connection method, six GPIO signal lines are required.</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
+<p>NHD-0216K1Z-FSW-FBW-L LED panel</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$8.11/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-FSW-FBW-L/1701185?s=N4IgTCBcDaIHIAkAiBaADGAjANgNKYC0UAxAZQHUSAhSgGRAF0BfIA">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1078,26 +1078,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>The typical current of the backlight at 5V is only 15mA, which helps to control the power supply burden.</td>
+<td>The 16×2 character format limits the amount of information that can be displayed at one time.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>The FSTN positive display screen features a light background with dark text, making it suitable for showing text readings.</td>
+<td>The V0 pin requires an external contrast voltage setting to add a regulating connection.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
+<p>NHD-0216K1Z-NSW-BBW-L LED panel</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$7.44/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-NSW-BBW-L/1701179?s=N4IgTCBcDaIHIAkAiBaADGAjANgNKYC0U4BlAdRQCFKKAZEAXQF8g">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1108,23 +1108,23 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Supports 5V power supply and parallel interface.</td>
+<td>Transmissive screens rely on backlighting to obtain readable displays.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>The white backlight makes it convenient to view the content in a darker environment.</td>
+<td>The character layout cannot present a complete graphical user interface.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 2: NHD-0216K1Z-FSW-FBW-L LED panel</p>
+<p><strong>Rationale:</strong> I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.82, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.</p>
 <h3 id="style-2_2">Style 2</h3>
 <blockquote>
 <p>Also acceptable, more markdown friendly</p>
