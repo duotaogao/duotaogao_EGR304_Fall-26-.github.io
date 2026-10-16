@@ -26,7 +26,7 @@ title: Component Selection Example
 
 2. CMS-3652-28L200 speaker
 
-    ![](image3.png)
+    ![](image2.png)
 
     * $2.17 /each
     * [Link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-3652-28L200/29778294?s=N4IgTCBcDaIMoAcCmBDA1kgTgZwAQGEBZOAWgGYA2AVjBLAA4AZMABhZAF0BfIA)
