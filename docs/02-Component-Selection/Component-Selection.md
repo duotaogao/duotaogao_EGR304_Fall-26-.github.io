@@ -236,7 +236,7 @@ title: Component Selection Example
 
 1. XC1259TR-ND surface mount crystal
 
-    ![](image13.png)
+    ![](image16.png)
 
     * $1/each
     * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
@@ -249,7 +249,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image14.png)
+    ![](image17.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
@@ -262,7 +262,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image15.png)
+    ![](image18.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
