@@ -89,11 +89,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#style-2" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -513,17 +508,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Component Selection Example
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -533,50 +517,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#style-2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#style-2_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -802,41 +742,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#style-2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#style-2_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1050,15 +955,106 @@
 </ol>
 <p><strong>Choice:</strong> Option 2: NHD-0216K1Z-FSW-FBW-L LED panel</p>
 <p><strong>Rationale:</strong> I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.82, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
+<p><strong>low pass filter</strong></p>
+<ol>
+<li>
+<p>MCP6004-I/P low pass filter</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image7.png" data-desc-position="bottom"><img alt="" src="image7.png"></a></p>
+<ul>
+<li>$0.6/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060?s=N4IgTCBcDaILIGEAKA2ADGgLAWgJIHokQBdAXyA">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supports 5V power supply</td>
+<td>The MHz gain bandwidth is limited for high-frequency and high-gain design</td>
+</tr>
+<tr>
+<td>DIP package simplifies breadboard prototyping</td>
+<td>In the four-way operational amplifier structure, the unused channels need to be connected correctly.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>MCP6024-I/P low pass filter</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image8.png" data-desc-position="bottom"><img alt="" src="image8.png"></a></p>
+<ul>
+<li>$2.73/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6024-I-P/417834?s=N4IgTCBcDaILIGEAKA2ADGALAWgJIHokQBdAXyA">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 10 MHz gain-bandwidth product provides design margin.</td>
+<td>Typical quiescent current is approximately 1 mA per channel.</td>
+</tr>
+<tr>
+<td>DIP package allows easy assembly and replacement.</td>
+<td>Unused channels occupy space and require proper termination.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>TLV9004IPWR low pass filter</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image9.png" data-desc-position="bottom"><img alt="" src="image9.png"></a></p>
+<ul>
+<li>$0.91/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912?s=N4IgTCBcDaICoBkBqBOADGgLASQAoHUAlEAXQF8g">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supports 5V power supply.</td>
+<td>When TSSOP packaging is used for breadboards, an adapter board is required.</td>
+</tr>
+<tr>
+<td>The typical quiescent current per channel is approximately 60µA.</td>
+<td>The maximum working power supply is 5.5V and it cannot be directly connected to a 9V power source.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Choice:</strong> Option 1: MCP6004-I/P</p>
+<p><strong>Rationale:</strong> I choose MCP6004-I/P as the operational amplifier for the active low-pass filter. It supports 5V power supply for the system. The DIP packaging makes it convenient to build and debug on the breadboard, while remaining consistent with the existing block diagram.</p>
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>
 <p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image10.png" data-desc-position="bottom"><img alt="" src="image10.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
@@ -1088,7 +1084,7 @@
 </li>
 <li>
 <p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image11.png" data-desc-position="bottom"><img alt="" src="image11.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
@@ -1118,7 +1114,7 @@
 </li>
 <li>
 <p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image12.png" data-desc-position="bottom"><img alt="" src="image12.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
@@ -1149,15 +1145,11 @@
 </ol>
 <p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
 <p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2_1">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>
 <p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image13.png" data-desc-position="bottom"><img alt="" src="image13.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
@@ -1187,7 +1179,7 @@
 </li>
 <li>
 <p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image14.png" data-desc-position="bottom"><img alt="" src="image14.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
@@ -1217,7 +1209,7 @@
 </li>
 <li>
 <p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image15.png" data-desc-position="bottom"><img alt="" src="image15.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
@@ -1248,15 +1240,11 @@
 </ol>
 <p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
 <p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2_2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>
 <p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image13.png" data-desc-position="bottom"><img alt="" src="image13.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
@@ -1286,7 +1274,7 @@
 </li>
 <li>
 <p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image14.png" data-desc-position="bottom"><img alt="" src="image14.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
@@ -1316,7 +1304,7 @@
 </li>
 <li>
 <p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image15.png" data-desc-position="bottom"><img alt="" src="image15.png"></a></p>
 <ul>
 <li>$1/each</li>
 <li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
