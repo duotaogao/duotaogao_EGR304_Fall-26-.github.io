@@ -2,7 +2,7 @@
 title: Component Selection of UI Board
 ---
 
-**External Clock Module**
+**Speaker**
 
 1. CMS-4065-28L200 speaker
 
@@ -26,7 +26,7 @@ title: Component Selection of UI Board
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Both are 8Ω                                             | The nominal diameter is 36mm, and sufficient installation space needs to be reserved inside the casing.      |
+    | Its 8 Ω impedance matches the planned speaker load.     | The nominal diameter is 36mm, and sufficient installation space needs to be reserved inside the casing.      |
     | Rated at 2W                                | The manufacturer suggests using it in conjunction with the casing, but additional considerations need to be given to the fixed structure and acoustic design. |
     |  Nominal 36mm, with the lowest price at $2.17. |
 
@@ -40,7 +40,7 @@ title: Component Selection of UI Board
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
     | 36.2×20.5mm oval                                             | The maximum unit price is $4.73     |
-    | Suitable for narrower Spaces                                 | Different installation shapes|
+    | Suitable for narrower Spaces                                 | The oval housing requires a matching mounting bracket or enclosure opening. |
     |  |
    
 **Choice:** Option 2: CMS-3652-28L200 speaker
@@ -49,9 +49,9 @@ title: Component Selection of UI Board
 
 
 
-**LED panel**
+**LCD Display**
 
-1. NHD-0216K1Z-FL-YBW LED panel 
+1. NHD-0216K1Z-FL-YBW LCD Display
 
     ![](image4.png)
 
@@ -64,7 +64,7 @@ title: Component Selection of UI Board
     | Semi-transparent reflective screens can display by using ambient light.   | When using a 4-bit write-only connection method, six GPIO signal lines are required.                                       |
     |  |
 
-2. NHD-0216K1Z-FSW-FBW-L LED panel
+2. NHD-0216K1Z-FSW-FBW-L LCD Display
 
     ![](image5.png)
 
@@ -77,7 +77,7 @@ title: Component Selection of UI Board
     | The FSTN positive display screen features a light background with dark text, making it suitable for showing text readings.      | The V0 pin requires an external contrast voltage setting to add a regulating connection. |
     | |
 
-3. NHD-0216K1Z-NSW-BBW-L LED panel
+3. NHD-0216K1Z-NSW-BBW-L LCD Display
 
     ![](image6.png)
 
@@ -92,7 +92,7 @@ title: Component Selection of UI Board
    
 **Choice:** Option 2: NHD-0216K1Z-FSW-FBW-L LED panel
 
-**Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.82, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.
+**Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.28, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.
 
 
 **low pass filter**
@@ -106,7 +106,7 @@ title: Component Selection of UI Board
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Supports 5V power supply                             | The MHz gain bandwidth is limited for high-frequency and high-gain design |
+    | Supports 5V power supply                             | The 1 MHz gain-bandwidth product limits high-frequency, high-gain designs. |
     | DIP package simplifies breadboard prototyping                      | In the four-way operational amplifier structure, the unused channels need to be connected correctly.                                       |
     |  |
 
@@ -212,7 +212,7 @@ title: Component Selection of UI Board
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
     | Fixed 5V output, supporting 1A output current, and heat dissipation conditions must be met.    | The output capacitance must be at least 22µF and must meet the ESR requirements.     |
-    | At 1A, the typical pressure difference is approximately 0.5V.   | Even when the temperature drops from 9V to 5V, significant heat is still generated. |
+    | At 1A, the typical dropout voltage is approximately 0.5V.   | Converting 9 V to 5 V still generates substantial heat.  |
     |  |
 
 3. R-78B5.0-1.0 5V Voltage Regulator
