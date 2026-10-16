@@ -232,48 +232,46 @@ title: Component Selection Example
 
 **Rationale:** I chose the L7805CV to convert the 9V input to the 5V required by the system. It provides a fixed output voltage without the need for additional voltage setting resistors. The TO-220 through-hole package facilitates breadboard assembly and debugging. The built-in overheat and short-circuit protection is also suitable for the power circuit of this project.
 
-**External Clock Module**
+**9V AC/DC Power Adapter**
 
-1. XC1259TR-ND surface mount crystal
-
+1. WSU090-1300 9V AC/DC Power Adapter 
     ![](image16.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $8.65/each
+    * [link to product](https://www.digikey.com/en/products/detail/triad-magnetics/WSU090-1300/3094977)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | A 9V output is suitable for providing input to the L7805CV. |  The full-load operating temperature range is 0 to 40°C. |
+    | The American-style plug can be directly inserted into the socket without the need for an additional AC power cord  | The output ripple and noise have a maximum peak-to-peak value of 150mV. The audio circuit needs to do a good job in power filtering.                          |
+    |  |
 
-1. CTX936TR-ND surface mount oscillator
-
+2. GST18A09-P1J 9V AC/DC Power Adapter 
     ![](image17.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $14.1/each
+    * [Link to product](https://www.digikey.com/en/products/detail/mean-well-usa-inc/GST18A09-P1J/7703606?s=N4IgTCBcDaIOIGUAqBGAHAQQAwE4C0ACigFIgC6AvkA)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | It provides an output capacity of 9V and 2A.                                            | The AC power cord needs to be purchased separately.     |
+    | The desktop structure allows the power supply body to be placed on the workbench.  | The 93 × 54 × 36mm casing requires additional space for placement. |
+    | |
 
-1. CTX936TR-ND surface mount oscillator
+3. SWI12-9-N-P5 9V AC/DC Power Adapter 
 
     ![](image18.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $17.71/each
+    * [Link to product](https://www.digikey.com/en/products/detail/bel-power-solutions/SWI12-9-N-P5/5287237)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Supports 90-264VAC input.  | The output capacity is limited to 1.2A.     |
+    | The no-load power consumption is up to 75mW, which can reduce the standby power consumption.           | Fixed American pins need to be converted into plugs in other standard socket areas. |
+    |  |
    
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Choice:** Option 1 — Triad WSU090-1300
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Rationale:** I chose the Triad WSU900-1300 because it offers a 9V DC output, which can power the L7805CV regulator of the system. Its 1.3A output capacity leaves a margin for the 1A power supply target marked in the block diagram. The American-style pins do not require additional AC power lines, making it convenient for laboratory use. Among these three candidate schemes, its unit price is the lowest, which helps to control the project cost.
 
