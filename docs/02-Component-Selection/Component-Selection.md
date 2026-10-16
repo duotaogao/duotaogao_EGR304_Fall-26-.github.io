@@ -183,54 +183,54 @@ title: Component Selection Example
     |  It provides an off mode to reduce power consumption when no sound is being played.                             | When the output power is high, it is necessary to check the heat dissipation of the chip and the power supply capacity of the power supply. |
     |  |
    
-**Choice:** Option 1: CTX936TR-ND surface mount oscillator
+**Choice:** Option 1: LM386N-1/NOPB audio power amplifier
 
 **Rationale:** I chose the LM386N-1/NOPB as the power amplifier for the prompt sound circuit because it supports 5V power supply for the system and its DIP package makes it convenient for breadboard assembly and debugging. Its built-in voltage gain reduces the external gain setting components, making it suitable for the simple mono prompt sound function of this project.
 
-**External Clock Module**
+**5V Voltage Regulator**
 
-1. XC1259TR-ND surface mount crystal
+1. L7805CV 5V Voltage Regulator
 
     ![](image13.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $1.08/each
+    * [link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | A fixed 5V output is required, and there is no need to set the resistor for the output voltage.          | The input and output voltage differences are converted into heat, and heat dissipation is required when there is a large current. |
+    |  The TO-220 in-line package is easy TO assemble and comes with overheat and short-circuit protection.  | The input voltage must be higher than 5V and a voltage stabilization margin should be left.                                        |
+    |  |
 
-1. CTX936TR-ND surface mount oscillator
+2. LM2940CT-5.0/NOPB 5V Voltage Regulator
 
     ![](image14.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $2/each
+    * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2940CT-5-0-NOPB/32575?s=N4IgTCBcDaIDIFkwE4AsAGAwgFQLQFYA6dAegDkB5ABQCEQBdAXyA)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Fixed 5V output, supporting 1A output current, and heat dissipation conditions must be met.    | The output capacitance must be at least 22µF and must meet the ESR requirements.     |
+    | At 1A, the typical pressure difference is approximately 0.5V.   | Even when the temperature drops from 9V to 5V, significant heat is still generated. |
+    |  |
 
-1. CTX936TR-ND surface mount oscillator
+3. R-78B5.0-1.0 5V Voltage Regulator
 
     ![](image15.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $12.17/each
+    * [Link to product](https://www.digikey.com/en/products/detail/recom-power/R-78B5-0-1-0/2256232)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Supports 6.5-32V input and provides 5V, 1A output.              |  There are switching ripples and noise. Audio circuits need to pay attention to filtering and layout.   |
+    | The switch has a high conversion efficiency and can reduce heat loss during the voltage reduction process.                 | The module has a minimum load recommendation. When the load is light, the output performance needs to be checked. |
+    |  |
    
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Choice:** Option 1: L7805CV 5V Voltage Regulator
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Rationale:** I chose the L7805CV to convert the 9V input to the 5V required by the system. It provides a fixed output voltage without the need for additional voltage setting resistors. The TO-220 through-hole package facilitates breadboard assembly and debugging. The built-in overheat and short-circuit protection is also suitable for the power circuit of this project.
 
 **External Clock Module**
 
