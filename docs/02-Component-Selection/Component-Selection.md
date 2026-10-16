@@ -90,7 +90,7 @@ title: Component Selection of UI Board
     | The white backlight makes it convenient to view the content in a darker environment.                                 | The character layout cannot present a complete graphical user interface.|
     |  |
    
-**Choice:** Option 2: NHD-0216K1Z-FSW-FBW-L LED panel
+**Choice:** Option 2: NHD-0216K1Z-FSW-FBW-L LCD Display
 
 **Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.28, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.
 
@@ -273,10 +273,11 @@ title: Component Selection of UI Board
    
 **Choice:** Option 1 — Triad WSU090-1300
 
-**Rationale:** I chose the Triad WSU900-1300 because it offers a 9V DC output, which can power the L7805CV regulator of the system. Its 1.3A output capacity leaves a margin for the 1A power supply target marked in the block diagram. The American-style pins do not require additional AC power lines, making it convenient for laboratory use. Among these three candidate schemes, its unit price is the lowest, which helps to control the project cost.
+**Rationale:** I chose the Triad WSU090-1300 because it offers a 9V DC output, which can power the L7805CV regulator of the system. Its 1.3A output capacity leaves a margin for the 1A power supply target marked in the block diagram. The American-style pins do not require additional AC power lines, making it convenient for laboratory use. Among these three candidate schemes, its unit price is the lowest, which helps to control the project cost.
 
 
 **Pin Table**
+
 | MCU Pin | Function | Connected Component | Direction |
 | --- | --- | --- | --- |
 | RA2 | DAC1 audio output | Low-pass filter input (MCP6004) | Output |
