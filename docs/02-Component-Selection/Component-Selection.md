@@ -2,13 +2,6 @@
 title: Component Selection Example
 ---
 
-## Examples
-
-
-### Style 2
-
-> Also acceptable, more markdown friendly
-
 **External Clock Module**
 
 1. CMS-4065-28L200 speaker
@@ -54,15 +47,13 @@ title: Component Selection Example
 
 **Rationale:** I chose the CMS-3652-28L200 because it is low in price, compact in size and comes with leads, making it a suitable candidate as a speaker for the UI board. Its 8Ω impedance and 2W rated input power comply with the planned specifications to be adopted. Subsequently, we will verify whether the prompt sound is clear and audible in conjunction with the actual power amplifier and the casing.
 
-### Style 2
 
-> Also acceptable, more markdown friendly
 
-**External Clock Module**
+**LED panel**
 
 1. NHD-0216K1Z-FL-YBW LED panel 
 
-    ![](image1.png)
+    ![](image4.png)
 
     * $7.83/each
     * [link to product](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-FL-YBW/1701171?s=N4IgTCBcDaIHIAkAiBaADGAjANgNKYC0UAxAGRQE0AhAdRAF0BfIA)
@@ -75,7 +66,7 @@ title: Component Selection Example
 
 2. NHD-0216K1Z-FSW-FBW-L LED panel
 
-    ![](image3.png)
+    ![](image5.png)
 
     * $8.11/each
     * [Link to product](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-FSW-FBW-L/1701185?s=N4IgTCBcDaIHIAkAiBaADGAjANgNKYC0UAxAZQHUSAhSgGRAF0BfIA)
@@ -88,7 +79,7 @@ title: Component Selection Example
 
 3. NHD-0216K1Z-NSW-BBW-L LED panel
 
-    ![](image3.png)
+    ![](image6.png)
 
     * $7.44/each
     * [Link to product](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-NSW-BBW-L/1701179?s=N4IgTCBcDaIHIAkAiBaADGAjANgNKYC0U4BlAdRQCFKKAZEAXQF8g)
