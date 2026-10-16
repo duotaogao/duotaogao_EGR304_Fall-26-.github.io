@@ -1143,16 +1143,16 @@
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 1: CTX936TR-ND surface mount oscillator</p>
+<p><strong>Choice:</strong> Option 1: LM386N-1/NOPB audio power amplifier</p>
 <p><strong>Rationale:</strong> I chose the LM386N-1/NOPB as the power amplifier for the prompt sound circuit because it supports 5V power supply for the system and its DIP package makes it convenient for breadboard assembly and debugging. Its built-in voltage gain reduces the external gain setting components, making it suitable for the simple mono prompt sound function of this project.</p>
-<p><strong>External Clock Module</strong></p>
+<p><strong>5V Voltage Regulator</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
+<p>L7805CV 5V Voltage Regulator</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image13.png" data-desc-position="bottom"><img alt="" src="image13.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$1.08/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1163,26 +1163,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>A fixed 5V output is required, and there is no need to set the resistor for the output voltage.</td>
+<td>The input and output voltage differences are converted into heat, and heat dissipation is required when there is a large current.</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>The TO-220 in-line package is easy TO assemble and comes with overheat and short-circuit protection.</td>
+<td>The input voltage must be higher than 5V and a voltage stabilization margin should be left.</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
+<p>LM2940CT-5.0/NOPB 5V Voltage Regulator</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image14.png" data-desc-position="bottom"><img alt="" src="image14.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$2/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2940CT-5-0-NOPB/32575?s=N4IgTCBcDaIDIFkwE4AsAGAwgFQLQFYA6dAegDkB5ABQCEQBdAXyA">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1193,26 +1193,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Fixed 5V output, supporting 1A output current, and heat dissipation conditions must be met.</td>
+<td>The output capacitance must be at least 22µF and must meet the ESR requirements.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>At 1A, the typical pressure difference is approximately 0.5V.</td>
+<td>Even when the temperature drops from 9V to 5V, significant heat is still generated.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
+<p>R-78B5.0-1.0 5V Voltage Regulator</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="image15.png" data-desc-position="bottom"><img alt="" src="image15.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$12.17/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/recom-power/R-78B5-0-1-0/2256232">Link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1223,23 +1223,23 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Supports 6.5-32V input and provides 5V, 1A output.</td>
+<td>There are switching ripples and noise. Audio circuits need to pay attention to filtering and layout.</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>The switch has a high conversion efficiency and can reduce heat loss during the voltage reduction process.</td>
+<td>The module has a minimum load recommendation. When the load is light, the output performance needs to be checked.</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 1: L7805CV 5V Voltage Regulator</p>
+<p><strong>Rationale:</strong> I chose the L7805CV to convert the 9V input to the 5V required by the system. It provides a fixed output voltage without the need for additional voltage setting resistors. The TO-220 through-hole package facilitates breadboard assembly and debugging. The built-in overheat and short-circuit protection is also suitable for the power circuit of this project.</p>
 <p><strong>External Clock Module</strong></p>
 <ol>
 <li>
