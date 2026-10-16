@@ -1335,6 +1335,22 @@
 </ol>
 <p><strong>Choice:</strong> Option 1 — Triad WSU090-1300</p>
 <p><strong>Rationale:</strong> I chose the Triad WSU900-1300 because it offers a 9V DC output, which can power the L7805CV regulator of the system. Its 1.3A output capacity leaves a margin for the 1A power supply target marked in the block diagram. The American-style pins do not require additional AC power lines, making it convenient for laboratory use. Among these three candidate schemes, its unit price is the lowest, which helps to control the project cost.</p>
+<p><strong>Pin Table</strong>
+| MCU Pin | Function | Connected Component | Direction |
+| --- | --- | --- | --- |
+| RA2 | DAC1 audio output | Low-pass filter input (MCP6004) | Output |
+| RE0 | LCD control signal | LCD display | Output |
+| RE1 | LCD control signal | LCD display | Output |
+| RD4 | LCD data D4 | LCD display | Output |
+| RD5 | LCD data D5 | LCD display | Output |
+| RD6 | LCD data D6 | LCD display | Output |
+| RD7 | LCD data D7 | LCD display | Output |
+| RD1 | START/STOP button input | START/STOP button | Input |
+| RD2 | UP button input | UP button | Input |
+| RD3 | DOWN button input | DOWN button | Input |
+| RC3 | UART receive (U1RX) | Force gauge board UART TX | Input |
+| RC2 | UART transmit (U1TX) | Force gauge board UART RX | Output |
+| RD0 | UI_RUN control signal | Force gauge board | Output |</p>
 
 
 
