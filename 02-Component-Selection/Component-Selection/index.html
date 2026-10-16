@@ -765,7 +765,7 @@
 
   <h1>Component Selection of UI Board</h1>
 
-<p><strong>External Clock Module</strong></p>
+<p><strong>Speaker</strong></p>
 <ol>
 <li>
 <p>CMS-4065-28L200 speaker</p>
@@ -813,7 +813,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Both are 8Ω</td>
+<td>Its 8 Ω impedance matches the planned speaker load.</td>
 <td>The nominal diameter is 36mm, and sufficient installation space needs to be reserved inside the casing.</td>
 </tr>
 <tr>
@@ -848,7 +848,7 @@
 </tr>
 <tr>
 <td>Suitable for narrower Spaces</td>
-<td>Different installation shapes</td>
+<td>The oval housing requires a matching mounting bracket or enclosure opening.</td>
 </tr>
 <tr>
 <td></td>
@@ -860,10 +860,10 @@
 </ol>
 <p><strong>Choice:</strong> Option 2: CMS-3652-28L200 speaker</p>
 <p><strong>Rationale:</strong> I chose the CMS-3652-28L200 because it is low in price, compact in size and comes with leads, making it a suitable candidate as a speaker for the UI board. Its 8Ω impedance and 2W rated input power comply with the planned specifications to be adopted. Subsequently, we will verify whether the prompt sound is clear and audible in conjunction with the actual power amplifier and the casing.</p>
-<p><strong>LED panel</strong></p>
+<p><strong>LCD Display</strong></p>
 <ol>
 <li>
-<p>NHD-0216K1Z-FL-YBW LED panel </p>
+<p>NHD-0216K1Z-FL-YBW LCD Display</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image4.png" data-desc-position="bottom"><img alt="" src="../image4.png"></a></p>
 <ul>
 <li>$7.83/each</li>
@@ -893,7 +893,7 @@
 </table>
 </li>
 <li>
-<p>NHD-0216K1Z-FSW-FBW-L LED panel</p>
+<p>NHD-0216K1Z-FSW-FBW-L LCD Display</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image5.png" data-desc-position="bottom"><img alt="" src="../image5.png"></a></p>
 <ul>
 <li>$8.11/each</li>
@@ -923,7 +923,7 @@
 </table>
 </li>
 <li>
-<p>NHD-0216K1Z-NSW-BBW-L LED panel</p>
+<p>NHD-0216K1Z-NSW-BBW-L LCD Display</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image6.png" data-desc-position="bottom"><img alt="" src="../image6.png"></a></p>
 <ul>
 <li>$7.44/each</li>
@@ -954,7 +954,7 @@
 </li>
 </ol>
 <p><strong>Choice:</strong> Option 2: NHD-0216K1Z-FSW-FBW-L LED panel</p>
-<p><strong>Rationale:</strong> I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.82, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.</p>
+<p><strong>Rationale:</strong> I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.28, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.</p>
 <p><strong>low pass filter</strong></p>
 <ol>
 <li>
@@ -974,7 +974,7 @@
 <tbody>
 <tr>
 <td>Supports 5V power supply</td>
-<td>The MHz gain bandwidth is limited for high-frequency and high-gain design</td>
+<td>The 1 MHz gain-bandwidth product limits high-frequency, high-gain designs.</td>
 </tr>
 <tr>
 <td>DIP package simplifies breadboard prototyping</td>
@@ -1197,8 +1197,8 @@
 <td>The output capacitance must be at least 22µF and must meet the ESR requirements.</td>
 </tr>
 <tr>
-<td>At 1A, the typical pressure difference is approximately 0.5V.</td>
-<td>Even when the temperature drops from 9V to 5V, significant heat is still generated.</td>
+<td>At 1A, the typical dropout voltage is approximately 0.5V.</td>
+<td>Converting 9 V to 5 V still generates substantial heat.</td>
 </tr>
 <tr>
 <td></td>
