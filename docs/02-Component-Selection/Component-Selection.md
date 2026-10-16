@@ -93,15 +93,59 @@ title: Component Selection Example
 **Choice:** Option 2: NHD-0216K1Z-FSW-FBW-L LED panel
 
 **Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.82, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board.
-### Style 2
 
-> Also acceptable, more markdown friendly
+
+**low pass filter**
+
+1. MCP6004-I/P low pass filter
+
+    ![](image7.png)
+
+    * $0.6/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060?s=N4IgTCBcDaILIGEAKA2ADGgLAWgJIHokQBdAXyA)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Supports 5V power supply                             | The MHz gain bandwidth is limited for high-frequency and high-gain design |
+    | DIP package simplifies breadboard prototyping                      | In the four-way operational amplifier structure, the unused channels need to be connected correctly.                                       |
+    |  |
+
+2. MCP6024-I/P low pass filter
+
+    ![](image8.png)
+
+    * $2.73/each
+    * [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6024-I-P/417834?s=N4IgTCBcDaILIGEAKA2ADGALAWgJIHokQBdAXyA)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | A 10 MHz gain-bandwidth product provides design margin.                                            | Typical quiescent current is approximately 1 mA per channel.      |
+    | DIP package allows easy assembly and replacement.                                | Unused channels occupy space and require proper termination.|
+    | |
+
+3. TLV9004IPWR low pass filter
+
+    ![](image9.png)
+
+    * $0.91/each
+    * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/TLV9004IPWR/9674912?s=N4IgTCBcDaICoBkBqBOADGgLASQAoHUAlEAXQF8g)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    |  Supports 5V power supply.                                            | When TSSOP packaging is used for breadboards, an adapter board is required.     |
+    |  The typical quiescent current per channel is approximately 60µA.                               | The maximum working power supply is 5.5V and it cannot be directly connected to a 9V power source. |
+    | |
+   
+**Choice:** Option 1: MCP6004-I/P
+
+**Rationale:** I choose MCP6004-I/P as the operational amplifier for the active low-pass filter. It supports 5V power supply for the system. The DIP packaging makes it convenient to build and debug on the breadboard, while remaining consistent with the existing block diagram.
+
 
 **External Clock Module**
 
 1. XC1259TR-ND surface mount crystal
 
-    ![](image1.png)
+    ![](image10.png)
 
     * $1/each
     * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
@@ -114,7 +158,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image3.png)
+    ![](image11.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
@@ -127,7 +171,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image3.png)
+    ![](image12.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
@@ -142,15 +186,12 @@ title: Component Selection Example
 
 **Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
 
-### Style 2
-
-> Also acceptable, more markdown friendly
 
 **External Clock Module**
 
 1. XC1259TR-ND surface mount crystal
 
-    ![](image1.png)
+    ![](image13.png)
 
     * $1/each
     * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
@@ -163,7 +204,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image3.png)
+    ![](image14.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
@@ -176,7 +217,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image3.png)
+    ![](image15.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
@@ -191,15 +232,11 @@ title: Component Selection Example
 
 **Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
 
-### Style 2
-
-> Also acceptable, more markdown friendly
-
 **External Clock Module**
 
 1. XC1259TR-ND surface mount crystal
 
-    ![](image1.png)
+    ![](image13.png)
 
     * $1/each
     * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
@@ -212,7 +249,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image3.png)
+    ![](image14.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
@@ -225,7 +262,7 @@ title: Component Selection Example
 
 1. CTX936TR-ND surface mount oscillator
 
-    ![](image3.png)
+    ![](image15.png)
 
     * $1/each
     * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
