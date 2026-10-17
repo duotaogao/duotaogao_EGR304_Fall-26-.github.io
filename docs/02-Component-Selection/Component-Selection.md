@@ -266,7 +266,7 @@ This page compares three candidate solutions for every major component of my sub
    
 4. BestCH 9V 3A AC/DC Power Adapter (issued in class)
 
-    ![](psu-bestch-9v3a.jpg){ width="250" }
+    ![](image16.png){ width="250" }
 
     * $4.52/each on Amazon (B09ZTKTLGW); issued in class, so it costs nothing from my budget
     * [BestCH 9 V 3 A adapter on Amazon](https://www.amazon.com/dp/B09ZTKTLGW)
