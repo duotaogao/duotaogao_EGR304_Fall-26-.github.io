@@ -312,9 +312,9 @@ This page compares three candidate solutions for every major component of my sub
 
 ## Use of Generative AI
 
-Generative AI (Claude) was used to review this page against the assignment requirements and to suggest corrections and wording for the pros, cons, rationale and pin table. I reviewed every change and the part choices before submission.
+Generative AI (ChatGPT) was used to review this page against the assignment requirements and to suggest corrections and wording for the pros, cons, rationale and pin table. I reviewed every change and the part choices before submission.
 
 Query text:
 
-1. [paste your first question exactly as you typed it]
-2. [paste every other question, one per line]
+1. How to identify advantages and disadvantages
+2. How to make a Pin Table
