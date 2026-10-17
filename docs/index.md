@@ -1,34 +1,28 @@
 ---
 title: Welcome
-tags:
-- tag1
-- tag2
 ---
 <center>
 <font size= "6">Duotao Gao Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> GripRx</font><br>
 for<br>
 <font size= "5"> Team 103 </font><br>
-
-**Submission: sep, 02, 2026**
 </center>
 
-## Introduction 
+## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+This datasheet documents my individual contributions to the Team 103 design project for EGR 304, Fall 2026.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
-
+Team 103 is designing **GripRx**, a prescription-based automatic-resistance grip trainer for hand rehabilitation. The device measures the force a patient applies through a load cell and automatically sets its own mechanical resistance to the level prescribed by a therapist. The system is split into three boards, each built around a PIC18F57Q43 Curiosity Nano: a user interface board, a force sensing board, and a motor board, connected in a daisy chain by 8-pin ribbon cables.
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+I design the **user interface (UI) board**, one end of the daisy chain. It reads the START/STOP, UP and DOWN buttons, shows the session status on a 16×2 character LCD, plays feedback tones through a DAC, active low-pass filter, LM386 audio amplifier and speaker, and exchanges UART messages with the force sensing board.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+## Datasheet Pages
 
-For all the sections
+- [Block Diagram](01-Block-Diagram/Block-Diagram.md): individual block diagram of the UI board
+- [Component Selection](02-Component-Selection/Component-Selection.md): candidate parts, choices and rationale for each major component, and the microcontroller pin table
+- [Power Budget](05-Power-Budget/Power-Budget.md): power budget for the UI board
