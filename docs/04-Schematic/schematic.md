@@ -13,4 +13,4 @@ This schematic shows the UI board for the GripRx project. It includes a 5 V powe
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](Subsystem Schematic Design Duotao Gao.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
