@@ -6,9 +6,11 @@ title: Schematic
 
 This schematic shows the UI board for the GripRx project. It includes a 5 V power supply, a PIC18F57Q43 Curiosity Nano development board, an LCD, control buttons, and an audio output circuit with a low-pass filter and an amplifier. The board communicates with the force-sensing board through a UART interface. Debugging LEDs, test points, and spare headers are included to support testing and troubleshooting.
 
+**Note:** If the schematic image does not display, please download the schematic PDF using the link below. The schematic PDF is also submitted directly to Canvas.
+
 
 ![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+**Figure 1:** Schematic of the GripRx UI board.
 
 
 ## Resouces
