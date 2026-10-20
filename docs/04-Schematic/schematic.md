@@ -9,7 +9,7 @@ This schematic shows the UI board for the GripRx project. It includes a 5 V powe
 **Note:** If the schematic image does not display, please download the schematic PDF using the link below. The schematic PDF is also submitted directly to Canvas.
 
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
+![Schematic of the GripRx UI board](Screenshot.png)
 **Figure 1:** Schematic of the GripRx UI board.
 
 
