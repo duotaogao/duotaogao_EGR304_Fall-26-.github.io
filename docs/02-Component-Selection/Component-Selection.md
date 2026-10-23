@@ -141,48 +141,6 @@ This page compares three candidate solutions for every major component of my sub
 **Rationale:** I choose MCP6004-I/P as the operational amplifier for the active low-pass filter. It supports 5V power supply for the system. The DIP packaging makes it convenient to build and debug on the breadboard, while remaining consistent with the existing block diagram. Its 1 MHz gain-bandwidth is far above the 4–5 kHz cutoff of the audio reconstruction filter, so the faster MCP6024 is not needed, and the TLV9004IPWR cannot be milled because of its 0.65 mm pin pitch. It is also issued in the class kit, so it costs nothing.
 
 
-**Audio Power Amplifier — [Individual subsystem: UI board]**
-
-1. LM386N-1/NOPB audio power amplifier
-
-    ![](image10.png){ width="250" }
-
-    * $1.18/each
-    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM386N-1-NOPB/6284?s=N4IgTCBcDaIDIFkDMAOAbAOQLQEYD0GA8gAoBCIAugL5A)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Runs from 4–12 V, so it works directly on the board's 5 V rail and drives an 8 Ω speaker. | The output power is limited under low-voltage power supply, and the volume of the prompt tone needs to be verified. |
-    | DIP packaging facilitates the construction of breadboards.      |  Conventional single-ended circuits require output coupling capacitors, which occupy additional space.                              |
-
-2. LM4861M/NOPB audio power amplifier
-
-    ![](image11.png){ width="250" }
-
-    * $1.81/each
-    * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM4861M-NOPB/334832?s=N4IgTCBcDaIDIFkAsAOAbARgQegHIHkAFAIRAF0BfIA)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    |  Under the conditions of 5V, 8Ω and 1% THD+N, the typical output power is 1.1W.          | When SOIC packaging is used for breadboards, an adapter board is required.     |
-    | Bridging output does not require an output coupling capacitor.                          | In bridge mode, both ends of the speaker must be connected to the amplifier output and cannot be grounded. |
-
-3. LM4871M/NOPB audio power amplifier
-
-
-    ![](image12.png){ width="250" }
-
-    * $1.92/each
-    * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM4871M-NOPB/364185?s=N4IgTCBcDaIDIFkAsAOA7ARgQegHIHkAFAIRAF0BfIA)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    |  Supports 5V power supply and 8Ω speakers.          |  SOIC packaging requires an adapter board to be inserted into the breadboard.   |
-    |  It provides an off mode to reduce power consumption when no sound is being played.                             | When the output power is high, it is necessary to check the heat dissipation of the chip and the power supply capacity of the power supply. |
-   
-**Choice:** Option 1: LM386N-1/NOPB audio power amplifier
-
-**Rationale:** I chose the LM386N-1/NOPB as the power amplifier for the prompt sound circuit because it supports 5V power supply for the system and its DIP package makes it convenient for breadboard assembly and debugging. Its built-in voltage gain reduces the external gain setting components, making it suitable for the simple mono prompt sound function of this project.
 
 **5V Voltage Regulator — [Individual subsystem: UI board]**
 
