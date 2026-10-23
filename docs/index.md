@@ -19,7 +19,7 @@ Team 103 is designing **GripRx**, a prescription-based automatic-resistance grip
 
 ### My Contribution
 
-I design the **user interface (UI) board**, one end of the daisy chain. It reads the START/STOP, UP and DOWN buttons, shows the session status on a 16×2 character LCD, plays feedback tones through a DAC, active low-pass filter, LM386 audio amplifier and speaker, and exchanges UART messages with the force sensing board.
+I design the **user interface (UI) board**, one end of the daisy chain. It reads the START/STOP, UP and DOWN buttons, shows the session status on a 16×2 character LCD, plays feedback tones through a DAC, volume control, an MCP6004 inverting amplifier, and a speaker, and exchanges UART messages with the force sensing board.
 
 ## Datasheet Pages
 
