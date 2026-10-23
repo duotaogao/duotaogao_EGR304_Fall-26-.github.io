@@ -1,5 +1,6 @@
 ---
 title: Power Budget: UI (User Interface) Board
+---
 
 ## Overview
 The power consumption budget includes Curiosity Nano, LCD and its backlight, MCP6004 speaker driver circuit, LED, buttons, potentiometer and bias circuit. The 9V adapter provides a single + 5V power supply to the circuit board through the L7805ABV-DG regulator. The main components adopt the maximum current value in the data sheet, and the auxiliary load adopts the upper limit of the calculated current, with an additional 25% safety margin. The absolute maximum rated value of the pin has been clearly distinguished from the normal operating current.
