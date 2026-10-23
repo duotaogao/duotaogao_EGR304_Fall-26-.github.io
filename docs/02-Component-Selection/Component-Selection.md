@@ -8,7 +8,7 @@ title: Component Selection of UI Board
 
 ## Overview
 
-This page compares three candidate solutions for every major component of my subsystem, the user interface (UI) board, and explains which one I chose and why. The components follow the blocks of my individual block diagram: the speaker, the character LCD, the op amp for the audio amplifier the 5 V voltage regulator and the 9 V wall adapter. The microcontroller (PIC18F57Q43 Curiosity Nano) and the push buttons are not compared, as the assignment instructs. All six components belong to my individual subsystem and are labeled in bold as **[Individual subsystem: UI board]**.
+This page compares three candidate solutions for every major component of my subsystem, the user interface (UI) board, and explains which one I chose and why. The components follow the blocks of my individual block diagram: the speaker, the character LCD, the op amp for the audio amplifier the 5 V voltage regulator and the 9 V wall adapter. The microcontroller (PIC18F57Q43 Curiosity Nano) and the push buttons are not compared, as the assignment instructs. All five component belong to my individual subsystem and are labeled in bold as **[Individual subsystem: UI board]**.
 
 **Speaker — [Individual subsystem: UI board]**
 
