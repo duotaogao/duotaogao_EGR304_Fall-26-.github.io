@@ -1,11 +1,10 @@
 ---
-title: Power Budget
+title: Power Budget: UI (User Interface) Board
 ---
 
 ## Overview
-The power supply budget includes Curiosity Nano, LCD and its backlight, MCP6004 speaker driver circuit, LED, buttons and bias circuit. The 9V adapter provides a 5V power supply through the L7805ABV-DG regulator. The budget assumes that all parts operate simultaneously and adds a 25% current safety margin. The design estimated value and the manufacturer's specification value have been indicated separately.
+The power consumption budget includes Curiosity Nano, LCD and its backlight, MCP6004 speaker driver circuit, LED, buttons, potentiometer and bias circuit. The 9V adapter provides a single + 5V power supply to the circuit board through the L7805ABV-DG regulator. The main components adopt the maximum current value in the data sheet, and the auxiliary load adopts the upper limit of the calculated current, with an additional 25% safety margin. The absolute maximum rated value of the pin has been clearly distinguished from the normal operating current.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
 ![budget1](budgetPg1.png){style width:"350" height:"300;"}
 
@@ -15,7 +14,7 @@ The power supply budget includes Curiosity Nano, LCD and its backlight, MCP6004 
 
 ## Conclusions
 
-The estimated total load current is 106.25 mA, and after adding a 25% safety margin, it becomes 132.81 mA. The rated power supply capacity of the selected voltage regulator and adapter can meet the estimated UI board load requirements. The actual power consumption, voltage regulator temperature and speaker performance will be verified in the prototype test. Since the system uses a wall-plug adapter, battery life calculation is not applicable.
+The total load current in the budget is 416.25 mA, and after adding a 25% safety margin, it becomes 520.31 mA. Under these budget assumptions and with adequate heat dissipation measures in place, the rated power supply capacity of the selected voltage regulators and adapters can meet the requirements. At a 9V input, the expected power loss of the voltage regulator is approximately 2.14W. Therefore, a suitable heat sink is required and its operating temperature should be verified. The actual current consumption and speaker performance will be verified in the prototype test. Since the circuit board is powered by a wall-plug adapter, battery life calculation is not applicable.
 
 ## Resouces
 
