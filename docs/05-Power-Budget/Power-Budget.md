@@ -19,4 +19,4 @@ The estimated total load current is 106.25 mA, and after adding a 25% safety mar
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [*here*](Duotao_Gao_Power_Budget.pdf), and a Microsoft Excel Sheet [*here*](Duotao_Gao_Power_Budget.xlsx).
