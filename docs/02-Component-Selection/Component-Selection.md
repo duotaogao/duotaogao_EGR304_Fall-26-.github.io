@@ -51,7 +51,7 @@ This page compares three candidate solutions for every major component of my sub
    
 **Choice:** Option 2: CMS-3652-28L200 speaker
 
-**Rationale:** I chose the CMS-3652-28L200 because it is low in price, compact in size and comes with leads, making it a suitable candidate as a speaker for the UI board. Its 8Ω impedance and 2W rated input power comply with the planned specifications to be adopted. Its 2 W rating is far above the roughly 0.3 W the LM386 can deliver from 5 V, so it cannot be overdriven, and it is the least expensive of the three. Subsequently, we will verify whether the prompt sound is clear and audible in conjunction with the actual power amplifier and the casing.
+**Rationale:** I chose the CMS-3652-28L200 because it is the cheapest among the three candidate models, compact in size, and comes with leads for easy connection to the J5. Its nominal impedance is 8Ω and the rated input power is 2W. The actual sound effect after being combined with the MCP6004 amplifier, series resistor and housing will be verified in the prototype test.
 
 
 
@@ -98,7 +98,7 @@ This page compares three candidate solutions for every major component of my sub
 **Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.28, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board. Because the LCD comes on its own small PCB, I will confirm with the instructor that it is not considered a daughter board before ordering.
 
 
-**Low-Pass Filter Op Amp — [Individual subsystem: UI board]**
+**Audio Op Amp — [Individual subsystem: UI board]**
 
 1. MCP6004-I/P quad op amp
 
@@ -138,8 +138,7 @@ This page compares three candidate solutions for every major component of my sub
    
 **Choice:** Option 1: MCP6004-I/P
 
-**Rationale:** I choose MCP6004-I/P as the operational amplifier for the active low-pass filter. It supports 5V power supply for the system. The DIP packaging makes it convenient to build and debug on the breadboard, while remaining consistent with the existing block diagram. Its 1 MHz gain-bandwidth is far above the 4–5 kHz cutoff of the audio reconstruction filter, so the faster MCP6024 is not needed, and the TLV9004IPWR cannot be milled because of its 0.65 mm pin pitch. It is also issued in the class kit, so it costs nothing.
-
+**Rationale:** I chose the MCP6004-I/P because it can use the 5V power supply of the circuit board. The course kit is already provided, and the DIP package is suitable for breadboard prototype testing and through-hole assembly. According to the feedback from TA, the updated design uses one of the channels as an inverting audio amplifier and no longer sets up an independent buffer stage or low-pass filter stage. Set the nominal AC gain to -2 with a 100kΩ input resistor and a 200kΩ feedback resistor. Due to the limited output driving capacity of the MCP6004, the actual speaker volume will be verified in the prototype test.
 
 
 **5V Voltage Regulator — [Individual subsystem: UI board]**
@@ -246,7 +245,7 @@ This page compares three candidate solutions for every major component of my sub
 
 | MCU Pin | Function | Connected Component | Direction |
 | --- | --- | --- | --- |
-| RA2 | DAC1 audio output | Low-pass filter input (MCP6004) | Output |
+| RA2 | DAC1 audio output | Audio amplifier input (MCP6004) | Output |
 | RE0 | LCD RS (register select) | LCD pin 4 | Output |
 | RE1 | LCD E (enable) | LCD pin 6 | Output |
 | RD4 | LCD data D4 | LCD pin 11 | Output |
