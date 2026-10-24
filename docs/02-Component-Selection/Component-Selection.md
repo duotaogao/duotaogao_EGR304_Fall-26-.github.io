@@ -34,7 +34,7 @@ This page compares three candidate solutions for every major component of my sub
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
     | Its 8 Ω impedance matches the planned speaker load.     | The nominal diameter is 36mm, and sufficient installation space needs to be reserved inside the casing.      |
-    | Rated at 2 W, far above what the LM386 can deliver from a 5 V supply, so the speaker cannot be overdriven. | The manufacturer suggests using it in conjunction with the casing, but additional considerations need to be given to the fixed structure and acoustic design. |
+    | Rated input power: 2 W. | The manufacturer suggests using it in conjunction with the casing, but additional considerations need to be given to the fixed structure and acoustic design. |
     |  Nominal 36mm, with the lowest price at $2.17. |
 
 3. CMS-36205-28L200 speaker
@@ -182,7 +182,7 @@ This page compares three candidate solutions for every major component of my sub
    
 **Choice:** Option 1: L7805ABV-DG 5V Voltage Regulator
 
-**Rationale:** I chose the L7805ABV-DG, the 5 V regulator issued in class and used on all three team boards, to convert the 9 V input to 5 V. It supplies up to 1.5 A, which covers the worst-case current of the UI board (the LCD, the LM386 driving the speaker, the op amp and the Curiosity Nano) with margin, and its 2 V dropout is satisfied by the 9 V adapter. It needs no voltage-setting resistors, the TO-220 through-hole package is easy to solder and can carry a small heatsink, and the built-in current limit and thermal shutdown protect the board. The LM2940CT-5.0 has a lower dropout but only a 1 A rating, and the R-78B5.0-1.0 is a switching module whose ripple could be heard through the audio path, while the course requires a linear regulator.
+**Rationale:** I chose the L7805ABV-DG, the 5 V regulator issued in class and used on all three team boards, to convert the 9 V input to 5 V. It supplies up to 1.5 A, which covers the worst-case current of the UI board (the LCD, the MCP6004 audio circuit, and the Curiosity Nano) with margin, and its 2 V dropout is satisfied by the 9 V adapter. It needs no voltage-setting resistors, the TO-220 through-hole package is easy to solder and can carry a small heatsink, and the built-in current limit and thermal shutdown protect the board. The LM2940CT-5.0 has a lower dropout but only a 1 A rating, and the R-78B5.0-1.0 is a switching module whose ripple could be heard through the audio path, while the course requires a linear regulator.
 
 **9V AC/DC Power Adapter — [Individual subsystem: UI board]**
 
