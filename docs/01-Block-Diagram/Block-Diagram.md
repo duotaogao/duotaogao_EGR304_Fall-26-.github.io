@@ -15,7 +15,7 @@ This block diagram shows the user interface board designed by Duotao Gao for the
 
 ![Team103_UI_Board_Duotao.drawio](block-diagram.png)
 
-The editable source of block diagram is available as a [block diagram] <block-diagram.xml>
+The editable source of block diagram is available as [here](<block-diagram.xml>) and the source and image together as [here](<block-diagram.zip>)
 
 ## Generative AI Disclosure
 
