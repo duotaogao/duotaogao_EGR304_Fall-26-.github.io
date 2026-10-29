@@ -51,7 +51,7 @@ This page compares three candidate solutions for every major component of my sub
    
 **Choice:** Option 2: CMS-3652-28L200 speaker
 
-**Rationale:** I chose the CMS-3652-28L200 because it is the cheapest among the three candidate models, compact in size, and comes with leads for easy connection to the J5. Its nominal impedance is 8Ω and the rated input power is 2W. The actual sound effect after being combined with the MCP6004 amplifier, series resistor and housing will be verified in the prototype test.
+**Rationale:** I chose the CMS-3652-28L200 because it is the cheapest among the three candidate models, compact in size, and comes with leads for easy connection to the J5. Its nominal impedance is 8Ω and the rated input power is 2W. The actual sound effect after being combined with the MCP6004 amplifier, series resistor and housing will be verified in the prototype test. This choice supports UX-05, which requires the end-of-target notification to be audible at 65 dBA or more at 0.5 m, and keeps the board within the MF-05 prototype cost target.
 
 
 
@@ -95,7 +95,7 @@ This page compares three candidate solutions for every major component of my sub
    
 **Choice:** Option 2: NHD-0216K1Z-FSW-FBW-L LCD display
 
-**Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.28, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board. Because the LCD comes on its own small PCB, I will confirm with the instructor that it is not considered a daughter board before ordering.
+**Rationale:** I choose Option 2 because it conforms to the planned 5V power supply, parallel interface and 16×2 character format, with a typical backlight current of 15mA. Although the base price has increased by $0.28, the typical backlight current has been reduced from 130mA to 15mA, which helps to alleviate the power supply burden on the UI board. Because the LCD comes on its own small PCB, I will confirm with the instructor that it is not considered a daughter board before ordering. This display supports UX-02 (grip force shown with 0.1 kgf resolution and updated at 5 Hz or faster) and UX-03 (resistance level, completed repetitions and target repetitions visible at the same time on the two 16-character lines).
 
 
 **Audio Op Amp — [Individual subsystem: UI board]**
@@ -138,7 +138,7 @@ This page compares three candidate solutions for every major component of my sub
    
 **Choice:** Option 1: MCP6004-I/P
 
-**Rationale:** I chose the MCP6004-I/P because it can use the 5V power supply of the circuit board. The course kit is already provided, and the DIP package is suitable for breadboard prototype testing and through-hole assembly. According to the feedback from TA, the updated design uses one of the channels as an inverting audio amplifier and no longer sets up an independent buffer stage or low-pass filter stage. Set the nominal AC gain to -2 with a 100kΩ input resistor and a 200kΩ feedback resistor. Due to the limited output driving capacity of the MCP6004, the actual speaker volume will be verified in the prototype test.
+**Rationale:** I chose the MCP6004-I/P because it can use the 5V power supply of the circuit board. The course kit is already provided, and the DIP package is suitable for breadboard prototype testing and through-hole assembly. According to the feedback from TA, the updated design uses one of the channels as an inverting audio amplifier and no longer sets up an independent buffer stage or low-pass filter stage. Set the nominal AC gain to -2 with a 100kΩ input resistor and a 200kΩ feedback resistor. Due to the limited output driving capacity of the MCP6004, the actual speaker volume will be verified in the prototype test. The amplifier drives the speaker from the DAC output to meet UX-05, and using one channel of a class-kit quad op amp keeps the cost low for MF-05.
 
 
 **5V Voltage Regulator — [Individual subsystem: UI board]**
@@ -183,7 +183,7 @@ This page compares three candidate solutions for every major component of my sub
 **Choice:** Option 1: L7805ABV-DG 5V Voltage Regulator
 
 **Rationale:** I chose the L7805ABV-DG, the 5 V regulator issued in class and used on all three team boards, to convert the 9 V input to 5 V. It supplies up to 1.5 A, which covers the worst-case current of the UI board (the LCD, the MCP6004 audio circuit, and the Curiosity Nano) with margin, and its 2 V dropout is satisfied by the 9 V adapter. It needs no voltage-setting resistors, the TO-220 through-hole package is easy to solder and can carry a small heatsink, and the built-in current limit and thermal shutdown protect the board. The LM2940CT-5.0 has a lower dropout but only a 1 A rating, and the R-78B5.0-1.0 is a switching module whose ripple could be heard through the audio path, while the course requires a linear regulator.
-
+It is a common through-hole part with a documented alternate (LM2940CT-5.0), which satisfies MF-04.
 **9V AC/DC Power Adapter — [Individual subsystem: UI board]**
 
 1. WSU090-1300 9V AC/DC Power Adapter 
@@ -236,7 +236,7 @@ This page compares three candidate solutions for every major component of my sub
 
 **Choice:** Option 4: BestCH 9V 3A AC/DC Power Adapter (issued in class), with the Mean Well GST18A09-P1J (Option 2) as the backup
 
-**Rationale:** The power budget requires the external source to supply the full rating of every regulator connected to it, which is 1.5 A for the L7805ABV-DG. The BestCH adapter supplies 3 A, leaving 1.5 A to spare, and it is already issued in class at no cost. Its 9 V output gives the regulator its 2 V of dropout headroom while producing less heat than a 12 V supply. The Triad WSU090-1300 (1.3 A) and the SWI12-9-N-P5 (1.2 A) fail the power budget check, so the Mean Well GST18A09-P1J (2 A) is my backup if the class adapter fails its polarity and voltage checks. Because the BestCH adapter has no manufacturer datasheet, I will measure its polarity and no-load voltage before connecting the board.
+**Rationale:** The power budget requires the external source to supply the full rating of every regulator connected to it, which is 1.5 A for the L7805ABV-DG. The BestCH adapter supplies 3 A, leaving 1.5 A to spare, and it is already issued in class at no cost. Its 9 V output gives the regulator its 2 V of dropout headroom while producing less heat than a 12 V supply. The Triad WSU090-1300 (1.3 A) and the SWI12-9-N-P5 (1.2 A) fail the power budget check, so the Mean Well GST18A09-P1J (2 A) is my backup if the class adapter fails its polarity and voltage checks. Because the BestCH adapter has no manufacturer datasheet, I will measure its polarity and no-load voltage before connecting the board. The Mean Well GST18A09-P1J is recorded as the documented alternate required by MF-04, and the class-issued adapter adds no cost to the MF-05 budget.
 
 
 ## Microcontroller Pin Table
@@ -252,9 +252,10 @@ This page compares three candidate solutions for every major component of my sub
 | RD5 | LCD data D5 | LCD pin 12 | Output |
 | RD6 | LCD data D6 | LCD pin 13 | Output |
 | RD7 | LCD data D7 | LCD pin 14 (LCD R/W, pin 5, tied to GND) | Output |
-| RD1 | START/STOP button input (weak pull-up) | START/STOP button to GND | Input |
-| RD2 | UP button input (weak pull-up) | UP button to GND | Input |
-| RD3 | DOWN button input (weak pull-up) | DOWN button to GND | Input |
+| RD1 | START/STOP button input (external 10 kΩ pull-up, RC debounce) | START/STOP button to GND |
+Input |
+| RD2 | UP button input (external 10 kΩ pull-up, RC debounce) | UP button to GND | Input |
+| RD3 | DOWN button input (external 10 kΩ pull-up, RC debounce) | DOWN button to GND | Input |
 | RC3 | UART receive (U1RX) | J1 pin 1, force sensing board UART TX | Input |
 | RC2 | UART transmit (U1TX) | J1 pin 2, force sensing board UART RX | Output |
 | RD0 | UI_RUN control signal | J1 pin 3, force sensing board | Output |
