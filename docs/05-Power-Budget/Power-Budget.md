@@ -9,7 +9,7 @@ The power consumption budget includes Curiosity Nano, LCD and its backlight, MCP
 
 ![budget2](budgetPg2.png){style width:"350" height:"300;"}
 
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
+
 
 ## Conclusions
 
