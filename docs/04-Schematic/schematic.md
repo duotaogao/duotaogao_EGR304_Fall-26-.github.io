@@ -11,7 +11,7 @@ Nano (U2) reads the START/STOP, UP and DOWN buttons, which use external 10 kΩ p
 
 
 ![Schematic of the GripRx UI board](Screenshot.png)
-**Figure 1:** Schematic of the GripRx UI board.
+**Figure 1:** Schematic of the GripRx UI board. [Open the full-resolution image](Screenshot.png).
 
 
 ## Resouces
