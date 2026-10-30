@@ -27,3 +27,5 @@ I design the **user interface (UI) board**, one end of the daisy chain. It reads
 - [Component Selection](02-Component-Selection/Component-Selection.md): candidate parts, choices and rationale for each major component, and the microcontroller pin table
 - [Power Budget](05-Power-Budget/Power-Budget.md): power budget for the UI board
 - [Team Link](https://egr304-2026-f-103.github.io/): Team website link
+- [Schematic](schematic.md): Schematic link
+- [BOM](BOM.md):BOM link
