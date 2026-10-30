@@ -146,7 +146,7 @@ Provided generic parts use the specifications in the course stock list. Manufact
 
 | Use | Candidate | Review needed |
 | --- | --- | --- |
-| LCD | NHD-0216K1Z-FLYBW | Voltage, pinout, dimensions and course approval |
+| LCD | NHD-0216K1Z-FL-YBW | Voltage, pinout, dimensions and course approval |
 | U1 | LM2940CT-5.0 | Different capacitor/stability requirements |
 | U3 | MCP6024-I/P | Operating range, output performance and pinout |
 | Speaker | CMS-4065-28L200 | Dimensions, impedance and sound output |
