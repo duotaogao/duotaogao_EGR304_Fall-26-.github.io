@@ -12,6 +12,7 @@ Critical parts list a documented alternate, as required by MF-04.
 
 ## Bill of Materials
 *Table 1: Bill of materials for the GripRx UI board, sorted by vendor.*
+
 | **Part Name/Description** | **Qty/Board** | **Order Qty** | **Unit Cost** | **Total Cost** |
 **Manufacturer** | **Manufacturer #** | **Vendor Link** | **Datasheet** | **Ref Designators** |
 **Alternate** |
