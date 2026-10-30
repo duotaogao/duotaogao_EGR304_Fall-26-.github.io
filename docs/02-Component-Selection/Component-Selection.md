@@ -267,6 +267,21 @@ It is a common through-hole part with a documented alternate (LM2940CT-5.0), whi
 | VOFF | Disables the Nano's own regulator | Tied to GND so the board is powered through VTG | Input |
 | GND | Ground | Board ground, J1 pin 8 | — |
 
+
+## MCC Configuration
+The pin assignment was checked in MPLAB Code Configurator (MCC Melody) for the PIC18F57Q43. UART1
+runs at 9600 baud, 8N1, matching the team software proposal, with U1TX on RC2 and U1RX on RC3. DAC1
+uses VDD and VSS as references and drives DAC1OUT1 on RA2. The LCD lines, UI_RUN and the debug LED
+are GPIO outputs; the three user buttons and the debug button are GPIO inputs with the internal weak
+pull-ups disabled, because the board has external 10 kΩ pull-ups. MCC generated the code with no pin
+conflicts.
+![MCC pin grid view](mcc-pin-grid.png){ width="700" }
+**Figure 1:** MCC Pin Grid View for the UI board.
+![MCC pins table with custom names](mcc-pins.png){ width="700" }
+**Figure 2:** Pin names and directions in MCC.
+![UART1 settings](mcc-uart1.png){ width="450" } ![DAC1 settings](mcc-dac1.png){ width="450" }
+**Figure 3:** UART1 (9600 8N1) and DAC1 settings.
+
 ## Use of Generative AI
 
 Generative AI (ChatGPT) was used to review this page against the assignment requirements and to suggest corrections and wording for the pros, cons, rationale and pin table. I reviewed every change and the part choices before submission.
