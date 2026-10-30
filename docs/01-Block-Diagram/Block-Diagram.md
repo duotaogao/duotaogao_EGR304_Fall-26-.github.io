@@ -1,5 +1,5 @@
 ---
-title: Individal Block Diagram
+title: Individual Block Diagram
 tags:
 - EGR 304
 - UI Board
