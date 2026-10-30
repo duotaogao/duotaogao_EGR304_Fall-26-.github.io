@@ -47,7 +47,7 @@ The $37.59 order is below the $60 per-member course allowance. It leaves $22.41 
 
 ## Peralta Stock Request
 
-The remaining seven Peralta requests follow the [course-designated stock planning sheet](files/Peralta_Course_Order_Planning_Reference.xlsx). Quantities below are requests, not confirmation of receipt. The listed row numbers identify entries in the Fall 2022 worksheet; they are not physical shelf/bin numbers. Unit charges are not quoted, and no retail replacement price is assigned to unmarked stock.
+The remaining seven Peralta requests follow the [course-designated stock planning sheet](https://www.dropbox.com/scl/fi/2vn7lf6sw42n8gvxrnfy8/Spring-2023-Order-Planning.xlsx?rlkey=sb7mjh9vm48ac2a8zcb9fryed&dl=0) Quantities below are requests, not confirmation of receipt. The listed row numbers identify entries in the Fall 2022 worksheet; they are not physical shelf/bin numbers. Unit charges are not quoted, and no retail replacement price is assigned to unmarked stock.
 
 | Refs | Required material | Requested qty | Source row |
 | --- | --- | --- | --- |
