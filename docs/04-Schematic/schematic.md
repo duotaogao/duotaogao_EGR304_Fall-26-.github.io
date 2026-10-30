@@ -25,6 +25,18 @@ Connector J1 carries UART signals, UI_RUN and a common ground between the UI boa
 
 Six test points, power-isolation jumpers, an IC socket and debugging connections support assembly and troubleshooting. Reusing class-provided components also helps control prototype cost. Final compliance with the team requirements will be evaluated through subsystem testing and team integration.
 
+## Use of Generative AI
+
+I used ChatGPT (OpenAI) for this assignment. ChatGPT helped explain the schematic requirements, review component connections and labels, and draft and revise the webpage overview and discussion of product requirements. I provided schematic screenshots, course materials and instructor feedback, and made the changes in KiCad and on the webpage. Hardware operation remains to be tested.
+
+My requests included:
+
+1. Reviewing the schematic for missing components and connections.
+2. Explaining component functions and reference designators.
+3. Checking consistency between the schematic and webpage descriptions.
+4. Helping describe how the UI board addresses user needs and product requirements.
+5. Improving the wording and formatting of the schematic webpage.
+
 
 ## Resouces
 
