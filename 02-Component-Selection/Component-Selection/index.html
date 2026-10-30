@@ -570,6 +570,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mcc-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCC Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#use-of-generative-ai" class="md-nav__link">
     <span class="md-ellipsis">
       Use of Generative AI
@@ -827,6 +836,15 @@
   <a href="#microcontroller-pin-table" class="md-nav__link">
     <span class="md-ellipsis">
       Microcontroller Pin Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcc-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCC Configuration
     </span>
   </a>
   
@@ -1466,6 +1484,19 @@ It is a common through-hole part with a documented alternate (LM2940CT-5.0), whi
 </tr>
 </tbody>
 </table>
+<h2 id="mcc-configuration">MCC Configuration</h2>
+<p>The pin assignment was checked in MPLAB Code Configurator (MCC Melody) for the PIC18F57Q43. UART1
+runs at 9600 baud, 8N1, matching the team software proposal, with U1TX on RC2 and U1RX on RC3. DAC1
+uses VDD and VSS as references and drives DAC1OUT1 on RA2. The LCD lines, UI_RUN and the debug LED
+are GPIO outputs; the three user buttons and the debug button are GPIO inputs with the internal weak
+pull-ups disabled, because the board has external 10 kΩ pull-ups. MCC generated the code with no pin
+conflicts.
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="mcc-pin-grid.png" data-desc-position="bottom"><img alt="MCC pin grid view" src="mcc-pin-grid.png" width="700"></a>
+<strong>Figure 1:</strong> MCC Pin Grid View for the UI board.
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mcc-pins.png" data-desc-position="bottom"><img alt="MCC pins table with custom names" src="../mcc-pins.png" width="700"></a>
+<strong>Figure 2:</strong> Pin names and directions in MCC.
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mcc-uart1.png" data-desc-position="bottom"><img alt="UART1 settings" src="../mcc-uart1.png" width="450"></a> <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mcc-dac1.png" data-desc-position="bottom"><img alt="DAC1 settings" src="../mcc-dac1.png" width="450"></a>
+<strong>Figure 3:</strong> UART1 (9600 8N1) and DAC1 settings.</p>
 <h2 id="use-of-generative-ai">Use of Generative AI</h2>
 <p>Generative AI (ChatGPT) was used to review this page against the assignment requirements and to suggest corrections and wording for the pros, cons, rationale and pin table. I reviewed every change and the part choices before submission.</p>
 <p>Query text:</p>
