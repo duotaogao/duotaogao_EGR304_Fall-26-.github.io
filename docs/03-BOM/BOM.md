@@ -162,9 +162,22 @@ These are candidates for review, not pre-approved interchangeable parts.
 - [Peralta request XLSX](Duotao_Gao_Peralta_Purchase_Request.xlsx) · [PDF](Duotao_Gao_Peralta_Purchase_Request.pdf)
 - [Digi-Key bulk-upload CSV](DigiKey_Bulk_Upload.csv)
 
-## AI Assistance
+## Use of Generative AI
 
-ChatGPT assisted with transcription of supplied schematic/BOM information, price lookup, quantities, source classification, calculations and document formatting. The student supplied inventory information and the email address. Actual part receipt, physical compatibility and instructor approval are not claimed. [Prompts and disclosure](AI_Disclosure.md).
+I used ChatGPT (OpenAI) to help organize the BOM, identify component footprints, research manufacturer part numbers and prices, calculate quantities and costs, prepare purchase requests, and format this webpage. I provided schematic screenshots, the exported component list, course materials, and information about available components. The BOM was revised using the course-designated Peralta planning sheet and team feedback.
+
+My main requests included:
+
+1. Guidance on footprint assignment and BOM export in KiCad.
+2. Identification of electrolytic capacitors and suitable component packages.
+3. Determination of which components needed to be purchased.
+4. Research on part numbers, datasheets, vendor links, and prices.
+5. Calculation of purchase quantities and costs within the applicable $60 budget.
+6. Review of the Peralta planning sheet and available materials.
+7. Revision of the BOM and purchase requests based on inventory updates and team feedback.
+8. Preparation of the spreadsheet and Markdown webpage.
+
+These points summarize my requests rather than reproduce the complete prompt transcript.
 
 ## Resources
 
