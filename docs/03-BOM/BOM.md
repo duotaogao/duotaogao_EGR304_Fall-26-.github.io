@@ -125,20 +125,20 @@ The list includes every schematic component and the required supplementary hardw
 
 | Refs | MPN | Manufacturer document | Product / source |
 | --- | --- | --- | --- |
-| C2 | FA28X7R1H334KRU00 | [PDF](datasheets/C2_TDK_FA.pdf) | [Product page](https://www.digikey.com/en/products/detail/tdk/FA28X7R1H334KRU00/7384656) |
-| C9 | FG28X5R1H105KRT00 | [PDF](datasheets/C9_TDK_FG.pdf) | [Product page](https://www.digikey.com/en/products/detail/tdk/FG28X5R1H105KRT00/7384818) |
-| C14 | 16YXJ220MCR6.3X11 | [PDF](datasheets/C14_Rubycon_YXJ.pdf) | [Product page](https://www.digikey.com/en/products/detail/rubycon/16YXJ220MCR6-3X11/5429971) |
-| D3 | 1N5822 | [PDF](datasheets/D3_1N5822.pdf) | [Product page](https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597) |
-| J1 | 61200821621 | [PDF](datasheets/J1_61200821621.pdf) | [Product page](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61200821621/4846916) |
-| J4 | NHD-0216K1Z-FSW-FBW-L | [PDF](datasheets/J4_NHD-0216K1Z-FSW-FBW-L.pdf) | [Product page](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-FSW-FBW-L/1701185) |
-| J5 | OSTTE020161 | [PDF](datasheets/Terminal_OSTTE020161.pdf) | [Product page](https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTE020161/614584) |
-| R13 | MFR-25FBF52-200K | [PDF](datasheets/R13_Yageo_MFR.pdf) | [Product page](https://www.digikey.com/en/products/detail/yageo/MFR-25FBF52-200K/13547) |
-| U1 | L7805ABV-DG | [PDF](datasheets/U1_ST_L78.pdf) | [Product page](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV-DG/497-15681-5-ND/3945936) |
-| U2 | DM164150 | [PDF](datasheets/U2_DM164150_UserGuide.pdf) | [Product page](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705) |
-| U3 | MCP6004-I/P | [PDF](datasheets/U3_MCP6004.pdf) | [Product page](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) |
-| External speaker via J5 | CMS-3652-28L200 | [PDF](datasheets/Speaker_CMS-3652-28L200.pdf) | [Product page](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-3652-28L200/29778294) |
-| U1 heatsink | ATS-PCBT1085 | [PDF](datasheets/U1_Heatsink_ATS_Catalog.pdf) | [Product page](https://www.digikey.com/en/products/detail/advanced-thermal-solutions-inc/ATS-PCBT1085/5030505) |
-| JP1, JP2 shunts | SPC02SYAN | [PDF](datasheets/JP_Shunt_SPC02SYAN.pdf) | [Product page](https://www.digikey.com/en/products/detail/sullins-connector-solutions/SPC02SYAN/76375) |
+| C2 | FA28X7R1H334KRU00 | [PDF](C2_TDK_FA.pdf) | [Product page](https://www.digikey.com/en/products/detail/tdk/FA28X7R1H334KRU00/7384656) |
+| C9 | FG28X5R1H105KRT00 | [PDF](C9_TDK_FG.pdf) | [Product page](https://www.digikey.com/en/products/detail/tdk/FG28X5R1H105KRT00/7384818) |
+| C14 | 16YXJ220MCR6.3X11 | [PDF](C14_Rubycon_YXJ.pdf) | [Product page](https://www.digikey.com/en/products/detail/rubycon/16YXJ220MCR6-3X11/5429971) |
+| D3 | 1N5822 | [PDF](D3_1N5822.pdf) | [Product page](https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597) |
+| J1 | 61200821621 | [PDF](J1_61200821621.pdf) | [Product page](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61200821621/4846916) |
+| J4 | NHD-0216K1Z-FSW-FBW-L | [PDF](J4_NHD-0216K1Z-FSW-FBW-L.pdf) | [Product page](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216K1Z-FSW-FBW-L/1701185) |
+| J5 | OSTTE020161 | [PDF](Terminal_OSTTE020161.pdf) | [Product page](https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTE020161/614584) |
+| R13 | MFR-25FBF52-200K | [PDF](R13_Yageo_MFR.pdf) | [Product page](https://www.digikey.com/en/products/detail/yageo/MFR-25FBF52-200K/13547) |
+| U1 | L7805ABV-DG | [PDF](U1_ST_L78.pdf) | [Product page](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV-DG/497-15681-5-ND/3945936) |
+| U2 | DM164150 | [PDF](U2_DM164150_UserGuide.pdf) | [Product page](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705) |
+| U3 | MCP6004-I/P | [PDF](U3_MCP6004.pdf) | [Product page](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) |
+| External speaker via J5 | CMS-3652-28L200 | [PDF](Speaker_CMS-3652-28L200.pdf) | [Product page](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-3652-28L200/29778294) |
+| U1 heatsink | ATS-PCBT1085 | [PDF](U1_Heatsink_ATS_Catalog.pdf) | [Product page](https://www.digikey.com/en/products/detail/advanced-thermal-solutions-inc/ATS-PCBT1085/5030505) |
+| JP1, JP2 shunts | SPC02SYAN | [PDF](JP_Shunt_SPC02SYAN.pdf) | [Product page](https://www.digikey.com/en/products/detail/sullins-connector-solutions/SPC02SYAN/76375) |
 
 Provided generic parts use the specifications in the course stock list. Manufacturer family documents are references; select PCB footprints from the actual issued part. Archived alternative documents do not establish the identity of unmarked stock.
 
