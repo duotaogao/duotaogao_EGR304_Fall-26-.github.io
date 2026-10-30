@@ -31,7 +31,7 @@ The $37.59 order is below the $60 per-member course allowance. It leaves $22.41 
 
 | Refs | Part / description | Manufacturer / MPN | Order qty | Unit USD | Total USD |
 | --- | --- | --- | --- | --- | --- |
-| J4 | 16 x 2 character LCD module | Newhaven Display / NHD-0216K1Z-FL-YBW | 2 | $8.11 | $16.22 |
+| J4 | 16 x 2 character LCD module | Newhaven Display / NHD-0216K1Z-FSW-FBW-L | 2 | $8.11 | $16.22 |
 | C14 | Electrolytic capacitor, 220 uF 16 V | Rubycon / 16YXJ220MCR6.3X11 | 4 | $0.45 | $1.80 |
 | C2 | Nonpolar ceramic capacitor, 0.33 uF 50 V | TDK / FA28X7R1H334KRU00 | 4 | $0.37 | $1.48 |
 | C9 | Nonpolar ceramic capacitor, 1 uF 50 V (16 V minimum) | TDK / FG28X5R1H105KRT00 | 4 | $0.31 | $1.24 |
