@@ -156,11 +156,11 @@ These are candidates for review, not pre-approved interchangeable parts.
 
 ## Files
 
-- [Full BOM spreadsheet](files/Duotao_Gao_BOM_Updated.xlsx)
-- [BOM page PDF](files/Duotao_Gao_BOM_Page.pdf)
-- [Digi-Key request XLSX](files/Duotao_Gao_DigiKey_Purchase_Request.xlsx) · [PDF](files/Duotao_Gao_DigiKey_Purchase_Request.pdf)
-- [Peralta request XLSX](files/Duotao_Gao_Peralta_Purchase_Request.xlsx) · [PDF](files/Duotao_Gao_Peralta_Purchase_Request.pdf)
-- [Digi-Key bulk-upload CSV](files/DigiKey_Bulk_Upload.csv)
+- [Full BOM spreadsheet](Duotao_Gao_BOM_Updated.xlsx)
+- [BOM page PDF](Duotao_Gao_BOM_Page.pdf)
+- [Digi-Key request XLSX](Duotao_Gao_DigiKey_Purchase_Request.xlsx) · [PDF](Duotao_Gao_DigiKey_Purchase_Request.pdf)
+- [Peralta request XLSX](Duotao_Gao_Peralta_Purchase_Request.xlsx) · [PDF](Duotao_Gao_Peralta_Purchase_Request.pdf)
+- [Digi-Key bulk-upload CSV](DigiKey_Bulk_Upload.csv)
 
 ## AI Assistance
 
