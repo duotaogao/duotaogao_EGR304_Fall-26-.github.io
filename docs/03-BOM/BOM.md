@@ -177,7 +177,7 @@ My main requests included:
 7. Revision of the BOM and purchase requests based on inventory updates and team feedback.
 8. Preparation of the spreadsheet and Markdown webpage.
 
-These points summarize my requests rather than reproduce the complete prompt transcript.
 
-## Resources
+
+
 
