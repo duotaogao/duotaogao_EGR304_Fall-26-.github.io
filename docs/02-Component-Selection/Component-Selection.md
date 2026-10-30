@@ -252,8 +252,7 @@ It is a common through-hole part with a documented alternate (LM2940CT-5.0), whi
 | RD5 | LCD data D5 | LCD pin 12 | Output |
 | RD6 | LCD data D6 | LCD pin 13 | Output |
 | RD7 | LCD data D7 | LCD pin 14 (LCD R/W, pin 5, tied to GND) | Output |
-| RD1 | START/STOP button input (external 10 kΩ pull-up, RC debounce) | START/STOP button to GND |
-Input |
+| RD1 | START/STOP button input (external 10 kΩ pull-up, RC debounce) | START/STOP button to GND | Input |
 | RD2 | UP button input (external 10 kΩ pull-up, RC debounce) | UP button to GND | Input |
 | RD3 | DOWN button input (external 10 kΩ pull-up, RC debounce) | DOWN button to GND | Input |
 | RC3 | UART receive (U1RX) | J1 pin 1, force sensing board UART TX | Input |
