@@ -15,6 +15,7 @@ Two-layer, through-hole PCB for the GripRx user interface subsystem, designed in
 | Ground | GND pour on both layers, stitched with vias |
 | Footprint library | DG_Footprints (custom footprints prefixed DG_) |
 | DRC | 0 errors |
+
 ## PCB Layout
 ### Top
 ![Top copper layer](Duotao_PCB_Front.png)
