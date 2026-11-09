@@ -40,4 +40,4 @@ My requests included:
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](<Subsystem Schematic Design Duotao Gao.pdf>), and the Zip folder of the project [*here*](<Subsystem Schematic Design Duotao Gao.zip>).
+The schematic as a PDF download is available [*here*](<Subsystem Schematic Design Duotao Gao.pdf>)
