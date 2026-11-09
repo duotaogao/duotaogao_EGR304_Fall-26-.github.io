@@ -13,7 +13,7 @@ Two-layer, through-hole PCB for the GripRx user interface subsystem, designed in
 | Clearance | 10 mil minimum |
 | Vias | 1.6 mm pad, 0.8 mm hole |
 | Ground | GND pour on both layers, stitched with vias |
-| Footprint library | DG_Footprints (custom footprints prefixed DG_) |
+| Footprint library | GDT_Footprints (custom footprints prefixed GDT_) |
 | DRC | 0 errors |
 
 ## PCB Layout
