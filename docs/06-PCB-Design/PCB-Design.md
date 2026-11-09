@@ -21,9 +21,9 @@ Peralta Studios for milling on the LPKF ProtoMat S63.
 ### Bottom
 ![Bottom copper layer](Duotao_PCB_Back.png)
 ## Files
-- [PCB layout, top and bottom (PDF)](Duotao_PCB_Layout.pdf)
-- [KiCad project (ZIP)](Duotao_PCB_Project.zip)
-- [Gerber and drill files (ZIP)](DuotaoGao103.zip)
+- [PCB layout, top and bottom (PDF)](/duotaogao_EGR304_Fall-26-.github.io/06-PCB-Design/Duotao_PCB_Layout.pdf)
+- [KiCad project (ZIP)](/duotaogao_EGR304_Fall-26-.github.io/06-PCB-Design/Duotao_PCB_Project.zip)
+- [Gerber and drill files (ZIP)](/duotaogao_EGR304_Fall-26-.github.io/06-PCB-Design/DuotaoGao103.zip)
 ## Layout Notes
 - The LCD is along the top edge and the four buttons are along the bottom edge.
 - The Curiosity Nano is under the LCD connector, so the LCD data lines are short.
