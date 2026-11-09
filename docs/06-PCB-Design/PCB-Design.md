@@ -2,8 +2,8 @@
 **Duotao Gao · EGR 304 · Team 103 GripRx · User Interface Board**
 [Team website](https://egr304-2026-f-103.github.io/) | [Individual home](../index.md)
 ## Overview
-Two-layer, through-hole PCB for my subsystem, laid out in KiCad 10 and submitted to
-Peralta Studios for milling on the LPKF ProtoMat S63.
+Two-layer, through-hole PCB for the GripRx user interface subsystem, designed in KiCad 10. Gerber and drill files were checked using JLCDFM.
+
 | Item | Value |
 | --- | --- |
 | Board size | 100 mm x 100 mm (limit 100 mm x 100 mm) |
@@ -25,8 +25,4 @@ Peralta Studios for milling on the LPKF ProtoMat S63.
 - [KiCad project (ZIP)](Duotao_PCB_Project.zip)
 - [Gerber and drill files (ZIP)](DuotaoGao103.zip)
 ## Layout Notes
-- The LCD is along the top edge and the four buttons are along the bottom edge.
-- The Curiosity Nano is under the LCD connector, so the LCD data lines are short.
-- J1 (ribbon to the force sensing board) is on the right edge.
-- Through-hole connectors are routed on the bottom layer; vias are kept to a minimum and none are
-under components.
+The LCD circuitry has been removed. The Curiosity Nano connectors are positioned across the center of the board. The START/STOP, UP and DOWN buttons are along the bottom edge, with the debug button near the top-left corner. Connector J1 is below and to the left of the Nano connectors.
