@@ -764,57 +764,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#pcb-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      PCB Layout
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="PCB Layout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#top" class="md-nav__link">
-    <span class="md-ellipsis">
-      Top
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bottom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bottom
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#layout-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Layout Notes
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -922,57 +871,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#pcb-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      PCB Layout
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="PCB Layout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#top" class="md-nav__link">
-    <span class="md-ellipsis">
-      Top
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bottom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bottom
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#layout-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Layout Notes
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1000,38 +898,97 @@
 <p><strong>Duotao Gao · EGR 304 · Team 103 GripRx · User Interface Board</strong>
 <a href="https://egr304-2026-f-103.github.io/">Team website</a> | <a href="../../">Individual home</a></p>
 <h2 id="overview">Overview</h2>
-<p>Two-layer, through-hole PCB for my subsystem, laid out in KiCad 10 and submitted to
-Peralta Studios for milling on the LPKF ProtoMat S63.
-| Item | Value |
-| --- | --- |
-| Board size | 100 mm x 100 mm (limit 100 mm x 100 mm) |
-| Layers | 2 copper (top and bottom), no solder mask, no silkscreen |
-| Copper | 0.5 oz/ft² |
-| Traces | 40 mil power and ground (+9V, +5V, GND, VTG), 20 mil signal, 15 mil minimum |
-| Clearance | 10 mil minimum |
-| Vias | 1.6 mm pad, 0.8 mm hole |
-| Ground | GND pour on both layers, stitched with vias |
-| Footprint library | DG_Footprints (custom footprints prefixed DG_) |
-| DRC | 0 errors |</p>
-<h2 id="pcb-layout">PCB Layout</h2>
-<h3 id="top">Top</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Duotao_PCB_Front.png" data-desc-position="bottom"><img alt="Top copper layer" src="../Duotao_PCB_Front.png"></a></p>
-<h3 id="bottom">Bottom</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Duotao_PCB_Back.png" data-desc-position="bottom"><img alt="Bottom copper layer" src="../Duotao_PCB_Back.png"></a></p>
-<h2 id="files">Files</h2>
-<ul>
-<li><a href="../Duotao_PCB_Layout.pdf">PCB layout, top and bottom (PDF)</a></li>
-<li><a href="../Duotao_PCB_Project.zip">KiCad project (ZIP)</a></li>
-<li><a href="../DuotaoGao103.zip">Gerber and drill files (ZIP)</a></li>
-</ul>
-<h2 id="layout-notes">Layout Notes</h2>
-<ul>
-<li>The LCD is along the top edge and the four buttons are along the bottom edge.</li>
-<li>The Curiosity Nano is under the LCD connector, so the LCD data lines are short.</li>
-<li>J1 (ribbon to the force sensing board) is on the right edge.</li>
-<li>Through-hole connectors are routed on the bottom layer; vias are kept to a minimum and none are
-under components.</li>
-</ul>
+<p>Two-layer, through-hole PCB for the GripRx user interface subsystem, designed in KiCad 10. Gerber and drill files were checked using JLCDFM.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Board size</td>
+<td>100 mm x 100 mm (limit 100 mm x 100 mm)</td>
+</tr>
+<tr>
+<td>Layers</td>
+<td>2 copper (top and bottom), no solder mask, no silkscreen</td>
+</tr>
+<tr>
+<td>Copper</td>
+<td>0.5 oz/ft²</td>
+</tr>
+<tr>
+<td>Traces</td>
+<td>40 mil power and ground (+9V, +5V, GND, VTG), 20 mil signal, 15 mil minimum</td>
+</tr>
+<tr>
+<td>Clearance</td>
+<td>10 mil minimum</td>
+</tr>
+<tr>
+<td>Vias</td>
+<td>1.6 mm pad, 0.8 mm hole</td>
+</tr>
+<tr>
+<td>Ground</td>
+<td>GND pour on both layers, stitched with vias</td>
+</tr>
+<tr>
+<td>Footprint library</td>
+<td>DG_Footprints (custom footprints prefixed DG_)</td>
+</tr>
+<tr>
+<td>DRC</td>
+<td>0 errors</td>
+</tr>
+<tr>
+<td>## PCB Layout</td>
+<td></td>
+</tr>
+<tr>
+<td>### Top</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Duotao_PCB_Front.png" data-desc-position="bottom"><img alt="Top copper layer" src="../Duotao_PCB_Front.png"></a></td>
+<td></td>
+</tr>
+<tr>
+<td>### Bottom</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Duotao_PCB_Back.png" data-desc-position="bottom"><img alt="Bottom copper layer" src="../Duotao_PCB_Back.png"></a></td>
+<td></td>
+</tr>
+<tr>
+<td>## Files</td>
+<td></td>
+</tr>
+<tr>
+<td>- <a href="../Duotao_PCB_Layout.pdf">PCB layout, top and bottom (PDF)</a></td>
+<td></td>
+</tr>
+<tr>
+<td>- <a href="../Duotao_PCB_Project.zip">KiCad project (ZIP)</a></td>
+<td></td>
+</tr>
+<tr>
+<td>- <a href="../DuotaoGao103.zip">Gerber and drill files (ZIP)</a></td>
+<td></td>
+</tr>
+<tr>
+<td>## Layout Notes</td>
+<td></td>
+</tr>
+<tr>
+<td>The LCD circuitry has been removed. The Curiosity Nano connectors are positioned across the center of the board. The START/STOP, UP and DOWN buttons are along the bottom edge, with the debug button near the top-left corner. Connector J1 is below and to the left of the Nano connectors.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
